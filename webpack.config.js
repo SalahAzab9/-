@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { loader } = require("mini-css-extract-plugin");
 
 module.exports= {
     entry: "./src/index.js", 
@@ -21,7 +22,8 @@ module.exports= {
         open: true,
         devMiddleware: {
                 writeToDisk: true,
-            }
+            },
+         
       },
 
       module: {
@@ -45,18 +47,7 @@ module.exports= {
             ]
           },
 
-          {
-            test: /\.(jpe?g|png|gif|svg)$/,
-            use: [
-              {
-                loader: 'file-loader',
-                options: {
-                  name: '[name].[ext]',
-                  outputPath: 'images'
-                },
-              },
-            ],
-          },
+          
           
           {
             test: /\.(eot|svg|ttf|woff|woff2)$/,
