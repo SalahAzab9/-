@@ -2,19 +2,65 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
   \**************************************************************************************************************/
 @font-face {
-  font-family: "cairo";
-  src: url(../a6327c7f3dcbb3699806.ttf) format("ttf");
+  font-family: "El Messiri";
+  src: url(../6fe4f8463a875c40c5da.woff);
 }
 body {
-  font-family: "cairo";
-  background-color: #F8F9FA;
+  font-family: "El Messiri", sans-serif;
+  background-color: #f9f7f0;
 }
 
-.navbar img {
+.nav-bar .navbar {
+  background-color: #f9f7f0 !important;
+}
+.nav-bar .navbar img {
   width: 70px;
 }
-.navbar a {
+.nav-bar .navbar a {
   font-size: 25px;
+  color: #18B7BE !important;
+}
+.nav-bar .navbar a:hover {
+  color: #178CA4 !important;
+}
+
+.carousel-inner .carousel-item {
+  height: 500px;
+}
+.carousel-inner .carousel-item img {
+  width: 100% !important;
+  height: 100% !important;
+}
+.carousel-inner .carousel-item .carousel-caption {
+  transform: translateY(-20px);
+}
+.carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.carousel-inner .carousel-item .carousel-caption p {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.our-activities {
+  background-color: #f9f7f0;
+  text-align: center;
+  padding-top: 60px;
+}
+.our-activities .our-activities-header h1 {
+  margin-bottom: 50px;
+}
+.our-activities .activity {
+  padding-bottom: 50px;
+}
+.our-activities .activity .content h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.our-activities .activity .content p {
+  font-size: 20px;
+  line-height: 35px;
 }
 /*!***********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/@laylazi/bootstrap-rtl-scss/scss/bootstrap-rtl.scss ***!

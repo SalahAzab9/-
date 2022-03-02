@@ -8,8 +8,8 @@ module.exports= {
     entry: "./src/index.js", 
 
     output: {
-        publicPath :"",  
-        path: path.join(__dirname, '/dist'),
+        publicPath :"/",  
+        path: path.join(__dirname, 'dist'),
         filename: "index.js",
     },
 
@@ -23,7 +23,7 @@ module.exports= {
         devMiddleware: {
                 writeToDisk: true,
             },
-         
+        hot: false, 
       },
 
       module: {
@@ -50,7 +50,7 @@ module.exports= {
           
           
           {
-            test: /\.(eot|svg|ttf|woff|woff2)$/,
+            test: /\.(eot|ttf|woff|woff2)$/,
             use: [
               {
                 loader: 'file-loader',
@@ -62,6 +62,28 @@ module.exports= {
               },
             ],
           },
+
+          {
+            test: /\.(png|jpg|gif|json|xml|ico|svg)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'images',
+                },
+              },
+            ],
+          },
+
+          {
+            test: require.resolve("jquery"),
+            loader: "expose-loader",
+            options: {
+              exposes: ["$","jquery","jQuery"],
+          }
+        },
 
         ],
       },

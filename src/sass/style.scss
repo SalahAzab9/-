@@ -1,19 +1,87 @@
 @font-face {
-    font-family: "cairo";
-    src: url('../fonts/Abril_Fatface\,Cairo/Cairo/static/Cairo-Light.ttf') format("ttf");
+    font-family: "El Messiri";
+    src: url("../fonts/El_Messiri\ \(1\)/static/ElMessiri-Medium.woff");
 }
 
 body {
-    font-family: 'cairo';
-    background-color: #F8F9FA;
+    font-family: 'El Messiri', sans-serif;
+    background-color: #f9f7f0;
 }
 
-.navbar {
-    img {
-        width: 70px;
+.nav-bar{
+    .navbar {
+        background-color: #f9f7f0 !important;
+        img {
+            width: 70px;
+        }
+
+        a {
+            font-size: 25px;
+            color: #18B7BE !important;
+            &:hover {
+                color: #178CA4 !important;
+            }
+        }
+    }  
+}
+
+
+.carousel-inner{
+    
+    .carousel-item {
+        height: 500px;
+        
+        img {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .carousel-caption{
+            transform: translateY(-20px);
+            
+            h5 {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+    }
+    
+}
+
+.our-activities {
+    background-color: #f9f7f0;
+    text-align: center;
+    padding-top: 60px;
+    .our-activities-header {
+        h1{
+         margin-bottom: 50px;
+        }
+    }
+    .activity{
+        padding-bottom: 50px;
+        .icon{
+        // svg {
+        //     color: red;
+        // }
+        }
+    .content {
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            
+        }
+        p{
+            font-size: 20px;
+            line-height: 35px;
+        }
     }
 
-    a {
-        font-size: 25px;
     }
+    
+    
 }
