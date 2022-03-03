@@ -1,67 +1,3 @@
-/*!**************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
-  \**************************************************************************************************************/
-@font-face {
-  font-family: "El Messiri";
-  src: url(../6fe4f8463a875c40c5da.woff);
-}
-body {
-  font-family: "El Messiri", sans-serif;
-  background-color: #f9f7f0;
-}
-
-.nav-bar .navbar {
-  background-color: #f9f7f0 !important;
-}
-.nav-bar .navbar img {
-  width: 70px;
-}
-.nav-bar .navbar a {
-  font-size: 25px;
-  color: #18B7BE !important;
-}
-.nav-bar .navbar a:hover {
-  color: #178CA4 !important;
-}
-
-.carousel-inner .carousel-item {
-  height: 500px;
-}
-.carousel-inner .carousel-item img {
-  width: 100% !important;
-  height: 100% !important;
-}
-.carousel-inner .carousel-item .carousel-caption {
-  transform: translateY(-20px);
-}
-.carousel-inner .carousel-item .carousel-caption h5 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.carousel-inner .carousel-item .carousel-caption p {
-  font-size: 20px;
-  line-height: 35px;
-}
-
-.our-activities {
-  background-color: #f9f7f0;
-  text-align: center;
-  padding-top: 60px;
-}
-.our-activities .our-activities-header h1 {
-  margin-bottom: 50px;
-}
-.our-activities .activity {
-  padding-bottom: 50px;
-}
-.our-activities .activity .content h2 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-.our-activities .activity .content p {
-  font-size: 20px;
-  line-height: 35px;
-}
 /*!***********************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/@laylazi/bootstrap-rtl-scss/scss/bootstrap-rtl.scss ***!
   \***********************************************************************************************************************************************************/
@@ -10044,4 +9980,115 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
+  \**************************************************************************************************************/
+@font-face {
+  font-family: "El Messiri";
+  src: url(../6fe4f8463a875c40c5da.woff);
+}
+body {
+  font-family: "El Messiri", sans-serif;
+  background-color: #f9f7f0;
+}
+
+.nav-bar .navbar {
+  background-color: #f9f7f0 !important;
+}
+.nav-bar .navbar img {
+  width: 70px;
+}
+.nav-bar .navbar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #18B7BE !important;
+}
+.nav-bar .navbar a:hover {
+  color: #178CA4 !important;
+}
+.nav-bar .navbar a.new {
+  font-size: 18px;
+}
+
+#header-carousel .carousel-inner {
+  text-align: center;
+}
+#header-carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 600px;
+}
+#header-carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#header-carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.head {
+  font-size: 50px;
+}
+
+.our-activities {
+  background-color: #f9f7f0;
+  text-align: center;
+  padding-top: 60px;
+}
+.our-activities .head {
+  margin-bottom: 60px;
+}
+.our-activities .activity {
+  padding-bottom: 50px;
+}
+.our-activities .activity .icon svg {
+  color: #178CA4;
+}
+.our-activities .activity .content h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.our-activities .activity .content p {
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.students {
+  background-color: #fff;
+}
+.students #students-carousel .carousel-item-content {
+  padding-top: 60px;
+}
+.students #students-carousel .carousel-item-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.students #students-carousel button svg {
+  color: #178CA4;
+  transform: translateY(-10px);
+}
+
+.school-stars .card {
+  width: 350px;
+}
+.school-stars .card .card-body .card-title {
+  font-size: 25px;
+}
+.school-stars .card .card-body a {
+  background-color: #18B7BE;
+  border-color: #18B7BE;
+}
+.school-stars .card .card-body a:hover {
+  background-color: #178CA4;
+}
+
+.contact {
+  background-color: #fff;
+}
+.contact .list-group svg {
+  color: #178CA4;
+  margin-left: 10px;
 }

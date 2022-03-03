@@ -16,72 +16,131 @@ body {
         }
 
         a {
+            text-decoration: none;
             font-size: 25px;
             color: #18B7BE !important;
             &:hover {
                 color: #178CA4 !important;
             }
+            &.new{
+                font-size: 18px;
+            }
         }
     }  
 }
 
-
-.carousel-inner{
-    
-    .carousel-item {
-        height: 500px;
-        
-        img {
-            width: 100% !important;
-            height: 100% !important;
-        }
-
-        .carousel-caption{
-            transform: translateY(-20px);
-            
-            h5 {
-                font-size: 40px;
-                margin-bottom: 20px;
+#header-carousel{
+    .carousel-inner{
+        text-align: center;
+        .carousel-item {
+            img {
+                width: 100%;
+                height: 600px;
             }
-
-            p{
-                font-size: 20px;
-                line-height: 35px;
+    
+            .carousel-caption{
+                
+                
+                h5 {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+    
+                p{
+                    font-size: 22px;
+                    line-height: 35px;
+                }
             }
         }
     }
+}
     
+
+
+
+.head {
+    font-size: 50px;
 }
 
 .our-activities {
     background-color: #f9f7f0;
     text-align: center;
     padding-top: 60px;
-    .our-activities-header {
-        h1{
-         margin-bottom: 50px;
-        }
+    
+    .head{
+        margin-bottom: 60px;
     }
+   
     .activity{
         padding-bottom: 50px;
         .icon{
-        // svg {
-        //     color: red;
-        // }
+            svg{
+                color: #178CA4;
+            }
         }
     .content {
         h2 {
             margin-top: 30px;
             margin-bottom: 20px;
-            
+            font-size: 30px;
         }
         p{
-            font-size: 20px;
+            font-size: 22px;
             line-height: 35px;
         }
     }
 
     }
+}
+
+.students {
+    background-color: #fff;
+
+    #students-carousel{
+        .carousel-item-content {
+            padding-top: 60px;
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+        }
+        button{
+            svg{
+                color: #178CA4;
+                transform: translateY(-10px);
+            }
+        }
+    }
     
-    
+}
+
+.school-stars {
+    .card {
+        width: 350px;
+        .card-body {
+            .card-title {
+                font-size: 25px;
+            }
+            a {
+                background-color: #18B7BE;
+                border-color: #18B7BE;
+                &:hover{
+                    background-color: #178CA4;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: #fff;
+    .list-group {
+        svg {
+            color: #178CA4;
+            margin-left: 10px;
+        }
+        
+        
+    }
 }
