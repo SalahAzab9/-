@@ -30,17 +30,32 @@ body {
 }
 
 #header-carousel{
+    
     .carousel-inner{
         text-align: center;
+        
         .carousel-item {
+            position: relative;
+            .layer {
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color:#18B7BE , $alpha: 0.5);
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
             img {
                 width: 100%;
                 height: 600px;
             }
     
             .carousel-caption{
-                
-                
+                transform: translatey(-170px);
+
+                .big {
+                    font-size: 150px;
+                }
+
                 h5 {
                     font-size: 40px;
                     margin-bottom: 20px;
@@ -73,7 +88,8 @@ body {
    
     .activity{
         padding-bottom: 50px;
-        .icon{
+        .body{
+            margin-bottom: 25px;
             svg{
                 color: #178CA4;
             }
@@ -85,7 +101,7 @@ body {
             font-size: 30px;
         }
         p{
-            font-size: 22px;
+            font-size: 18px;
             line-height: 35px;
         }
     }
@@ -118,6 +134,9 @@ body {
 .school-stars {
     .card {
         width: 350px;
+        &:first-child {
+            margin-bottom: 25px;
+        }
         .card-body {
             .card-title {
                 font-size: 25px;
@@ -135,12 +154,18 @@ body {
 
 .contact {
     background-color: #fff;
-    .list-group {
-        svg {
-            color: #178CA4;
-            margin-left: 10px;
+    .call-us{
+        margin-bottom: 25px;
+        .list-group {
+            svg {
+                color: #178CA4;
+                margin-left: 10px;
+            }
+            
         }
-        
-        
     }
+    iframe {
+        width: 100%;
+    }
+    
 }

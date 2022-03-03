@@ -10014,9 +10014,26 @@ body {
 #header-carousel .carousel-inner {
   text-align: center;
 }
+#header-carousel .carousel-inner .carousel-item {
+  position: relative;
+}
+#header-carousel .carousel-inner .carousel-item .layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 183, 190, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 #header-carousel .carousel-inner .carousel-item img {
   width: 100%;
   height: 600px;
+}
+#header-carousel .carousel-inner .carousel-item .carousel-caption {
+  transform: translatey(-170px);
+}
+#header-carousel .carousel-inner .carousel-item .carousel-caption .big {
+  font-size: 150px;
 }
 #header-carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-size: 40px;
@@ -10042,7 +10059,10 @@ body {
 .our-activities .activity {
   padding-bottom: 50px;
 }
-.our-activities .activity .icon svg {
+.our-activities .activity .body {
+  margin-bottom: 25px;
+}
+.our-activities .activity .body svg {
   color: #178CA4;
 }
 .our-activities .activity .content h2 {
@@ -10051,7 +10071,7 @@ body {
   font-size: 30px;
 }
 .our-activities .activity .content p {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 35px;
 }
 
@@ -10074,6 +10094,9 @@ body {
 .school-stars .card {
   width: 350px;
 }
+.school-stars .card:first-child {
+  margin-bottom: 25px;
+}
 .school-stars .card .card-body .card-title {
   font-size: 25px;
 }
@@ -10088,7 +10111,13 @@ body {
 .contact {
   background-color: #fff;
 }
-.contact .list-group svg {
+.contact .call-us {
+  margin-bottom: 25px;
+}
+.contact .call-us .list-group svg {
   color: #178CA4;
   margin-left: 10px;
+}
+.contact iframe {
+  width: 100%;
 }
