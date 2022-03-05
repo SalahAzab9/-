@@ -6,3 +6,8 @@ import 'jquery/dist/jquery.min';
 import "popper.js/dist/popper.min.js";
 
 
+$(function(){
+    var date = new Date();
+
+    $("#save").text(date.getFullYear());
+})

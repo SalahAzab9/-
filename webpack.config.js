@@ -46,7 +46,7 @@ module.exports= {
                 "sass-loader"           
             ]
           },
-
+          
           
           
           {
@@ -98,6 +98,10 @@ module.exports= {
             filename: 'index.html',
             template: 'src/index.html'
         }),
+        new HtmlWebpackPlugin({
+          filename: 'school-stars.html',
+          template: 'src/school-stars.html'
+      }),
         new MiniCssExtractPlugin({
             filename : "sass/style.css"
         })

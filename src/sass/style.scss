@@ -1,25 +1,42 @@
+@import "./school-stars.scss";
+
 @font-face {
-    font-family: "El Messiri";
-    src: url("../fonts/El_Messiri\ \(1\)/static/ElMessiri-Medium.woff");
+    font-family: "cairo";
+    src: url("../fonts/Abril_Fatface\,Cairo/Cairo/static/Cairo-medium.ttf");
 }
 
 body {
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'cairo', sans-serif;
     background-color: #f9f7f0;
+    overflow-x: hidden !important;
 }
 
 .nav-bar{
     .navbar {
         background-color: #f9f7f0 !important;
+        
         img {
             width: 70px;
         }
 
+        li {
+            &.active,
+            &:hover{
+                background-color: #fff;
+                a{
+                    color: #178CA4 !important;
+                    border-bottom: 2px solid #178CA4;
+                }
+            }
+        }
+
         a {
             text-decoration: none;
-            font-size: 25px;
+            font-size: 20px;
             color: #18B7BE !important;
-            &:hover {
+            &:hover,
+            &:active,
+            &:focus {
                 color: #178CA4 !important;
             }
             &.new{
@@ -30,20 +47,18 @@ body {
 }
 
 #header-carousel{
-    
+    .carousel-indicators{
+        li {
+            width: 13px !important;
+            height: 13px !important;
+            border-radius: 50% !important;
+            margin-left: 7px;
+        }
+    }
     .carousel-inner{
         text-align: center;
-        
+
         .carousel-item {
-            position: relative;
-            .layer {
-                width: 100%;
-                height: 100%;
-                background-color: rgba($color:#18B7BE , $alpha: 0.5);
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
             img {
                 width: 100%;
                 height: 600px;
@@ -53,7 +68,7 @@ body {
                 transform: translatey(-170px);
 
                 .big {
-                    font-size: 150px;
+                    font-size: 100px;
                 }
 
                 h5 {
@@ -69,12 +84,23 @@ body {
         }
     }
 }
-    
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color:#18B7BE , $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 
 
 .head {
-    font-size: 50px;
+    font-weight: bold;
+    &.update {
+        transform: translateY(-45px);
+    }
 }
 
 .our-activities {
@@ -103,6 +129,7 @@ body {
         p{
             font-size: 18px;
             line-height: 35px;
+            color: grey;
         }
     }
 
@@ -112,7 +139,8 @@ body {
 .students {
     background-color: #fff;
 
-    #students-carousel{
+    #students-carousel,
+    #students-carousel-2{
         .carousel-item-content {
             padding-top: 60px;
             img{
@@ -144,6 +172,7 @@ body {
             a {
                 background-color: #18B7BE;
                 border-color: #18B7BE;
+                box-shadow: none !important;
                 &:hover{
                     background-color: #178CA4;
                 }
@@ -168,4 +197,35 @@ body {
         width: 100%;
     }
     
+}
+
+.footer-footer {
+    background-color: rgb(39, 39, 39);
+    padding: 25px 0;
+    color: #fff;
+}
+
+@media (max-width: 825px){
+    .students{
+        #students-carousel {
+            display: none;
+        }
+        #students-carousel-2 {
+            display: block !important;
+        }
+    }
+}
+
+@media (max-width: 952px) {
+    #header-carousel{
+        .carousel-caption{
+            transform: translateY(-200px) !important;
+            .head{
+                font-size: 30px !important;
+            }
+            .big {
+                font-size: 50px !important;
+            }
+        }
+    }
 }
