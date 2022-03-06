@@ -10024,11 +10024,49 @@ hr {
 }
 .student-grades table {
   margin-top: 40px;
-  width: 100%;
+  width: 100% !important;
   border: 2px solid #178CA4 !important;
 }
 .student-grades table th, .student-grades table td {
   border: 2px solid #178CA4 !important;
+}
+
+.tips {
+  padding: 30px 0;
+}
+.tips .tips-title {
+  margin-bottom: 40px;
+}
+.tips .card {
+  background-color: #178CA4 !important;
+  min-height: 95px !important;
+}
+
+.creat {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0;
+  color: #fff;
+}
+.creat form {
+  width: 400px !important;
+  margin: 50px 0;
+}
+.creat form a {
+  color: #025a6b;
+}
+.creat form button {
+  background-color: #178CA4;
+  border: none !important;
+  box-shadow: none !important;
+}
+.creat form button:hover, .creat form button:focus, .creat form button:active {
+  background-color: #025a6b !important;
 }
 
 @font-face {
@@ -10047,17 +10085,23 @@ body {
 .nav-bar .navbar img {
   width: 70px;
 }
-.nav-bar .navbar li.active, .nav-bar .navbar li:hover {
+.nav-bar .navbar ul li.active, .nav-bar .navbar ul li:hover {
   background-color: #fff;
 }
-.nav-bar .navbar li.active a, .nav-bar .navbar li:hover a {
+.nav-bar .navbar ul li.active a, .nav-bar .navbar ul li:hover a {
   color: #178CA4 !important;
   border-bottom: 2px solid #178CA4;
+}
+.nav-bar .navbar button {
+  border: none !important;
+  box-shadow: none !important;
+  transition: none !important;
 }
 .nav-bar .navbar a {
   text-decoration: none;
   font-size: 20px;
   color: #18B7BE !important;
+  border-bottom: 2px solid transparent;
 }
 .nav-bar .navbar a:hover, .nav-bar .navbar a:active, .nav-bar .navbar a:focus {
   color: #178CA4 !important;
@@ -10097,7 +10141,7 @@ body {
 .layer {
   width: 100%;
   height: 100%;
-  background-color: rgba(24, 183, 190, 0.5);
+  background-color: rgba(24, 183, 190, 0.7);
   position: absolute;
   top: 0;
   right: 0;

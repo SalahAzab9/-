@@ -101,12 +101,21 @@ module.exports= {
         new HtmlWebpackPlugin({
           filename: 'school-stars.html',
           template: 'src/school-stars.html'
-      }),
+        }),
+        new HtmlWebpackPlugin({
+          filename: 'school-stars-2.html',
+          template: 'src/school-stars-2.html'
+        }),
+        new HtmlWebpackPlugin({
+          filename: 'creat-account.html',
+          template: 'src/creat-account.html'
+        }),
+        new HtmlWebpackPlugin({
+          filename: 'sign-in.html',
+          template: 'src/sign-in.html'
+        }),
         new MiniCssExtractPlugin({
             filename : "sass/style.css"
         })
-
-
-      ]
-      
+      ]   
 }

@@ -1,5 +1,5 @@
 @import "./school-stars.scss";
-
+@import "./creat-account.scss";
 @font-face {
     font-family: "cairo";
     src: url("../fonts/Abril_Fatface\,Cairo/Cairo/static/Cairo-medium.ttf");
@@ -18,22 +18,30 @@ body {
         img {
             width: 70px;
         }
-
-        li {
-            &.active,
-            &:hover{
-                background-color: #fff;
-                a{
-                    color: #178CA4 !important;
-                    border-bottom: 2px solid #178CA4;
+        ul{
+            li {
+                &.active,
+                &:hover{
+                    background-color: #fff;
+                    a{
+                        color: #178CA4 !important;
+                        border-bottom: 2px solid #178CA4; 
+                    }
                 }
             }
+        }
+        
+        button {
+            border: none !important;
+            box-shadow: none !important;
+            transition: none !important;
         }
 
         a {
             text-decoration: none;
             font-size: 20px;
             color: #18B7BE !important;
+            border-bottom: 2px solid transparent;
             &:hover,
             &:active,
             &:focus {
@@ -88,7 +96,7 @@ body {
 .layer {
     width: 100%;
     height: 100%;
-    background-color: rgba($color:#18B7BE , $alpha: 0.5);
+    background-color: rgba($color:#18B7BE , $alpha: 0.7);
     position: absolute;
     top: 0;
     right: 0;

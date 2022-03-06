@@ -1,0 +1,29 @@
+.creat {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0;
+    color: #fff;
+    
+    form {
+        width: 400px !important;
+        margin: 50px 0;
+        a {
+            color: #025a6b;
+        }
+        button {
+            background-color: #178CA4;
+            border: none !important;
+            box-shadow: none !important;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: #025a6b !important;
+            }
+        }
+    }
+}
