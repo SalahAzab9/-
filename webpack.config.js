@@ -10,7 +10,7 @@ module.exports= {
     output: {
         publicPath :"/",  
         path: path.join(__dirname, 'dist'),
-        filename: "index.js",
+        filename: "js/index.js",
     },
 
     devServer: {
