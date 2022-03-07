@@ -3,6 +3,10 @@
     src: url("../fonts/Abril_Fatface\,Cairo/Cairo/static/Cairo-medium.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'cairo', sans-serif;
     background-color: $background-color;
@@ -20,10 +24,10 @@ body {
             li {
                 &.active,
                 &:hover{
-                    background-color: #fff;
                     a{
                         color: $main-color-darker !important;
-                        border-bottom: 2px solid $main-color-darker; 
+                        background-color: #fff;
+                        border-bottom: 2px solid $main-color-darker;
                     }
                 }
             }
@@ -40,6 +44,7 @@ body {
             font-size: 20px;
             color: $main-color !important;
             border-bottom: 2px solid transparent;
+            
             &:hover,
             &:active,
             &:focus {

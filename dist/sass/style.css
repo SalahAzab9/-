@@ -10082,6 +10082,7 @@ body .tips .card {
 }
 .creat form a {
   color: #025a6b;
+  transition: 1s all ease;
 }
 .creat form button {
   background-color: #178CA4;
@@ -10096,6 +10097,10 @@ body .tips .card {
   font-family: "cairo";
   src: url(../fonts/Cairo-medium.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "cairo", sans-serif;
   background-color: #f9f7f0;
@@ -10108,11 +10113,9 @@ body {
 .nav-bar .navbar img {
   width: 70px;
 }
-.nav-bar .navbar ul li.active, .nav-bar .navbar ul li:hover {
-  background-color: #fff;
-}
 .nav-bar .navbar ul li.active a, .nav-bar .navbar ul li:hover a {
   color: #178CA4 !important;
+  background-color: #fff;
   border-bottom: 2px solid #178CA4;
 }
 .nav-bar .navbar button {
