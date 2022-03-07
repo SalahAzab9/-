@@ -4,58 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الصفحة الرئيسية | علمني</title>
+    <title>نجوم المدرسة | علمني</title>
   <script defer src="/index.js"></script><link href="/sass/style.css" rel="stylesheet"></head>
   <body>
+    <!-- رأس الصفحة -->
     <header>
-        <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="./index.html"><img src="/images/noun-school-3652203.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html"><img src="/images/noun-school-3652203.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ml-2">
-                        <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ml-2">
-                        <a class="nav-link" href="">عن المدرسة</a>
-                    </li>
-                    <li class="nav-item ml-2">
-                        <a class="nav-link" href="">التلاميذ</a>
-                    </li>
-                    <li class="nav-item ml-2">
-                        <a class="nav-link" href="">المدونة</a>
-                    </li>
-                    <li class="nav-item ml-2">
-                        <a class="nav-link" href="">تواصل معنا</a>
-                    </li>
-                    </ul>
-                    <form class="form-inline">
-                    <button class="btn" type="button"> <a href="./sign-in.html" class="new">تسجيل الدخول</a> </button>
-                    <button class="btn" type="button"><a href="./creat-account.html" class="new">حساب جديد</a></button>
-                    </form>
-                </div>
-            </nav>
-        </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-2">
+                <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="nav-link" href="">عن المدرسة</a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="nav-link" href="">التلاميذ</a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="nav-link" href="">المدونة</a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="nav-link" href="">تواصل معنا</a>
+            </li>
+            </ul>
+            <form class="form-inline">
+              <button class="btn" type="button"> <a href="./sign-in.html" class="new">تسجيل الدخول</a> </button>
+              <button class="btn" type="button"><a href="./creat-account.html" class="new">حساب جديد</a></button>
+            </form>
+          </div>
+        </nav>
+      </div>
         <div class="stars-header text-center">
-          <div class="layer"></div>
+          <div class="layer school-stars"></div>
           <div class="container-fluid">
             <div class="row">
               <div class="col-12">
-                <h1 class="head"> تفاصيل عن الطالب</h1>
+                <h1 class="head"> نجوم المدرسة</h1>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="nav-bar">
+        <div class="nav-bar school-stars-nav">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item ml-2">
-                  <a class="nav-link" href="#data">البيانات <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#data">بيانات الطالب <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ml-2">
                   <a class="nav-link" href="#grades">درجات الطالب</a>
@@ -66,16 +67,19 @@
               </ul>
             </div>
           </nav>
-        </div> -->
+        </div>
     </header>
+    <!-- نهاية رأس الصفحة -->
+
     <main>
+      <!-- قسم بيانات الطالب -->
       <section class="about-student" id="data">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <div class="row">
                 <div class="col-12">
-                  <h1 class="text-center">البيانات</h1>
+                  <h1 class="text-center">بيانات الطالب</h1>
                 </div>
               </div>
             </div>
@@ -105,7 +109,9 @@
           </dl>
         </div>
       </section>
+      <!--نهاية قسم بيانات الطالب -->
       <hr>
+      <!-- قسم درجات الطالب -->
       <section class="student-grades" id="grades">
         <div class="container">
           <div class="row">
@@ -119,7 +125,7 @@
           </div>
           <div class="row">
             <div class="col-12">
-              <table class="table table-bordered ">
+              <table class="table table-bordered d-md-table d-none">
                 <thead>
                   <tr>
                     <th scope="col">المادة</th>
@@ -143,7 +149,7 @@
                   </tr>
                 </tbody>
               </table>
-              <!-- <table class="table table-bordered">
+              <table class="table table-bordered d-table d-md-none">
                 <thead>
                   <tr>
                     <th scope="col">المادة</th>
@@ -177,12 +183,14 @@
                     <td>100</td>
                   </tr>
                 </tbody>
-              </table> -->
+              </table>
             </div>
           </div>
         </div>
       </section>
+      <!--نهاية قسم درجات الطالب -->
       <hr>
+      <!-- قسم كيف تصبح متفوق ؟ -->
       <section class="tips" id="how">
         <div class="container">
           <div class="row">
@@ -194,7 +202,7 @@
             <div class="col-md-4">
               <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
                 <div class="card-body">
-                  <p class="card-text">1-المحافظة علي الصلاة والدعاء لله لتحقيق النجاح والتوفيق</p>
+                  <p class="card-text">1-طاعة الله والدعاء لتحقيق هذا التفوق والنجاح</p>
                 </div>
               </div>
             </div>
@@ -236,9 +244,9 @@
           </div>
         </div>
       </section>
-      
-
+      <!--نهاية قسم كيف تصبح متفوق ؟ -->
     </main>
+    <!-- ذيل الصفحة -->
     <footer class="footer-footer">
       <div class="container-fluid text-center">
         <div class="row">
@@ -248,5 +256,6 @@
         </div>
       </div>
     </footer>
+    <!--نهاية ذيل الصفحة -->
   </body>
 </html>

@@ -1,0 +1,59 @@
+@mixin school-stars($color,$color-darker){
+    
+    .layer {
+        &.school-stars{
+            background-color: rgba($color:$color , $alpha: 0.5);
+        }
+    }
+    
+    .nav-bar {
+        &.school-stars-nav {
+            .navbar {
+                ul{
+                    li {
+                        &.active,
+                        &:hover{
+                            a{
+                                color: $color-darker !important;
+                                border-bottom: 2px solid $color-darker; 
+                            }
+                        }
+                    }
+                }
+
+                a{
+                    color: $color !important;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                color: $color-darker !important;
+            }
+            }
+        }
+    }
+    .about-student {
+        dl{
+            dt {
+                color: $color;
+            }
+        }
+    }
+
+    .student-grades {
+        table{
+            border: 2px solid $color !important;
+            th,td {
+                border: 2px solid $color !important;
+            }
+        }
+        
+    }
+
+    .tips {
+        .card {
+            background-color: $color !important;
+        }
+    }
+}

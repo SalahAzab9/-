@@ -1,3 +1,10 @@
+@import "./variables";
+@import "./mixin";
+
+body {
+    @include school-stars($main-color,$main-color-darker);
+}
+
 .stars-header {
     background-image: url("../images/redd-9o8YdYGTT64-unsplash.jpg");
     background-position: center;
@@ -26,14 +33,7 @@
                 }
             }
         }
-
-        dt {
-            color: #178CA4;
-        }
     }
-}
-hr {
-    width: 50%;
 }
 
 .student-grades {
@@ -42,10 +42,6 @@ hr {
     table {
         margin-top: 40px;
         width: 100% !important;
-        border: 2px solid #178CA4 !important;
-        th,td {
-            border: 2px solid #178CA4 !important;
-        }
     }
 }
 
@@ -55,9 +51,15 @@ hr {
         margin-bottom: 40px;
     }
     .card {
-        background-color: #178CA4 !important;
-        min-height: 95px !important;
+        height: 130px !important;
     }
     
+}
+
+@media (max-width : 576px) {
+    .card {
+        margin-left:auto ;
+        margin-right: auto;
+    }
 }
 

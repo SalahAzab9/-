@@ -1,3 +1,5 @@
+@import "./variables";
+
 .creat {
     width: 100%;
     min-height: 100vh;
@@ -12,11 +14,14 @@
     form {
         width: 400px !important;
         margin: 50px 0;
+        input {
+            box-shadow: none !important;
+        }
         a {
             color: #025a6b;
         }
         button {
-            background-color: #178CA4;
+            background-color: $main-color-darker;
             border: none !important;
             box-shadow: none !important;
             &:hover,

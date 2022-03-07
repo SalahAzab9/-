@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "cairo";
+    src: url("../fonts/Abril_Fatface\,Cairo/Cairo/static/Cairo-medium.ttf");
+}
+
+body {
+    font-family: 'cairo', sans-serif;
+    background-color: $background-color;
+    overflow-x: hidden !important;
+}
+
+.nav-bar{
+    .navbar {
+        background-color: $background-color !important;
+        
+        img {
+            width: 70px;
+        }
+        ul{
+            li {
+                &.active,
+                &:hover{
+                    background-color: #fff;
+                    a{
+                        color: $main-color-darker !important;
+                        border-bottom: 2px solid $main-color-darker; 
+                    }
+                }
+            }
+        }
+        
+        button {
+            border: none !important;
+            box-shadow: none !important;
+            transition: none !important;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: $main-color !important;
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &:active,
+            &:focus {
+                color: $main-color-darker !important;
+            }
+            &.new{
+                font-size: 18px;
+            }
+        }
+    }  
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color:$main-color , $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    &.darker{
+        background-color: rgba($color:$main-color , $alpha: 0.7) !important;
+    }
+}
+
+.head {
+    font-weight: bold;
+    line-height: 60px;
+    &.update {
+        transform: translateY(-45px);
+    }
+}
+
+hr {
+    width: 50%;
+}
+
+.footer-footer {
+    background-color: rgb(39, 39, 39);
+    padding: 25px 0;
+    color: #fff;
+}
