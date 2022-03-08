@@ -12,7 +12,8 @@
                 ul{
                     li {
                         &.active,
-                        &:hover{
+                        &:hover,
+                        &:focus{
                             a{
                                 color: $color-darker !important;
                                 border-bottom: 2px solid $color-darker; 

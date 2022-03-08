@@ -9987,7 +9987,7 @@ h3 {
 body .layer.school-stars {
   background-color: rgba(24, 183, 190, 0.5);
 }
-body .nav-bar.school-stars-nav .navbar ul li.active a, body .nav-bar.school-stars-nav .navbar ul li:hover a {
+body .nav-bar.school-stars-nav .navbar ul li.active a, body .nav-bar.school-stars-nav .navbar ul li:hover a, body .nav-bar.school-stars-nav .navbar ul li:focus a {
   color: #178CA4 !important;
   border-bottom: 2px solid #178CA4;
 }
@@ -10079,6 +10079,11 @@ body .tips .card {
 }
 .creat form input {
   box-shadow: none !important;
+  color: #000 !important;
+}
+.creat form input.form-check-input + .error {
+  display: block;
+  margin-bottom: 3px !important;
 }
 .creat form a {
   color: #025a6b;
@@ -10091,6 +10096,11 @@ body .tips .card {
 }
 .creat form button:hover, .creat form button:focus, .creat form button:active {
   background-color: #025a6b !important;
+}
+.creat form .error {
+  margin-top: 3px;
+  margin-bottom: 0 !important;
+  color: #ff3c3c;
 }
 
 @font-face {
@@ -10113,7 +10123,7 @@ body {
 .nav-bar .navbar img {
   width: 70px;
 }
-.nav-bar .navbar ul li.active a, .nav-bar .navbar ul li:hover a {
+.nav-bar .navbar ul li.active a, .nav-bar .navbar ul li:hover a, .nav-bar .navbar ul li:focus a {
   color: #178CA4 !important;
   background-color: #fff;
   border-bottom: 2px solid #178CA4;

@@ -23,7 +23,8 @@ body {
         ul{
             li {
                 &.active,
-                &:hover{
+                &:hover,
+                &:focus{
                     a{
                         color: $main-color-darker !important;
                         background-color: #fff;
@@ -47,7 +48,7 @@ body {
             
             &:hover,
             &:active,
-            &:focus {
+            &:focus{
                 color: $main-color-darker !important;
             }
             &.new{
