@@ -1,8 +1,11 @@
-@mixin school-stars($color,$color-darker){
+@mixin school-stars($color,$color-darker,$color2,$color-darker2){
     
     .layer {
         &.school-stars{
             background-color: rgba($color:$color , $alpha: 0.5);
+        }
+        &.school-stars-2 {
+            background-color: rgba($color:$color2 , $alpha: 0.5);
         }
     }
     
@@ -33,28 +36,81 @@
             }
             }
         }
-    }
-    .about-student {
-        dl{
-            dt {
-                color: $color;
+        &.school-stars-nav-2 {
+            .navbar {
+                ul{
+                    li {
+                        &.active,
+                        &:hover,
+                        &:focus{
+                            a{
+                                color: $color-darker2 !important;
+                                border-bottom: 2px solid $color-darker2; 
+                            }
+                        }
+                    }
+                }
+
+                a{
+                    color: $color2 !important;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                color: $color-darker2 !important;
+            }
             }
         }
     }
+    .about-student {
+        &.about-student-1{
+            dl{
+                dt {
+                    color: $color;
+                }
+            }
+        }
+        &.about-student-2 {
+            dl{
+                dt {
+                    color: $color2;
+                }
+            }
+        }
+        
+    }
 
     .student-grades {
-        table{
-            border: 2px solid $color !important;
-            th,td {
+        &.student-grades-1{
+            table{
                 border: 2px solid $color !important;
+                th,td {
+                    border: 2px solid $color !important;
+                }
+            }
+        }
+        &.student-grades-2{
+            table{
+                border: 2px solid $color2 !important;
+                th,td {
+                    border: 2px solid $color2 !important;
+                }
             }
         }
         
     }
 
     .tips {
-        .card {
-            background-color: $color !important;
+        &.tips-student-1{
+            .card {
+                background-color: $color !important;
+            }
+        }
+        &.tips-student-2{
+            .card {
+                background-color: $color2 !important;
+            }
         }
     }
 }

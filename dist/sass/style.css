@@ -9987,6 +9987,9 @@ h3 {
 body .layer.school-stars {
   background-color: rgba(24, 183, 190, 0.5);
 }
+body .layer.school-stars-2 {
+  background-color: rgba(241, 214, 137, 0.5);
+}
 body .nav-bar.school-stars-nav .navbar ul li.active a, body .nav-bar.school-stars-nav .navbar ul li:hover a, body .nav-bar.school-stars-nav .navbar ul li:focus a {
   color: #178CA4 !important;
   border-bottom: 2px solid #178CA4;
@@ -9997,17 +10000,39 @@ body .nav-bar.school-stars-nav .navbar a {
 body .nav-bar.school-stars-nav .navbar:hover, body .nav-bar.school-stars-nav .navbar:active, body .nav-bar.school-stars-nav .navbar:focus {
   color: #178CA4 !important;
 }
-body .about-student dl dt {
+body .nav-bar.school-stars-nav-2 .navbar ul li.active a, body .nav-bar.school-stars-nav-2 .navbar ul li:hover a, body .nav-bar.school-stars-nav-2 .navbar ul li:focus a {
+  color: #ffa101 !important;
+  border-bottom: 2px solid #ffa101;
+}
+body .nav-bar.school-stars-nav-2 .navbar a {
+  color: #f1d689 !important;
+}
+body .nav-bar.school-stars-nav-2 .navbar:hover, body .nav-bar.school-stars-nav-2 .navbar:active, body .nav-bar.school-stars-nav-2 .navbar:focus {
+  color: #ffa101 !important;
+}
+body .about-student.about-student-1 dl dt {
   color: #18B7BE;
 }
-body .student-grades table {
+body .about-student.about-student-2 dl dt {
+  color: #f1d689;
+}
+body .student-grades.student-grades-1 table {
   border: 2px solid #18B7BE !important;
 }
-body .student-grades table th, body .student-grades table td {
+body .student-grades.student-grades-1 table th, body .student-grades.student-grades-1 table td {
   border: 2px solid #18B7BE !important;
 }
-body .tips .card {
+body .student-grades.student-grades-2 table {
+  border: 2px solid #f1d689 !important;
+}
+body .student-grades.student-grades-2 table th, body .student-grades.student-grades-2 table td {
+  border: 2px solid #f1d689 !important;
+}
+body .tips.tips-student-1 .card {
   background-color: #18B7BE !important;
+}
+body .tips.tips-student-2 .card {
+  background-color: #f1d689 !important;
 }
 
 .stars-header {

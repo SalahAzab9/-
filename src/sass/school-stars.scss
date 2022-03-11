@@ -2,7 +2,7 @@
 @import "./mixin";
 
 body {
-    @include school-stars($main-color,$main-color-darker);
+    @include school-stars($main-color,$main-color-darker,$main-color2,$main-color-darker-2);
 }
 
 .stars-header {
