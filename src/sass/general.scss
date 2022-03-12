@@ -11,6 +11,9 @@ body {
     font-family: 'cairo', sans-serif;
     background-color: $background-color;
     overflow-x: hidden !important;
+    &.main-page{
+        margin-top:98px ;
+    }
 }
 
 .nav-bar{
@@ -20,19 +23,7 @@ body {
         img {
             width: 70px;
         }
-        ul{
-            li {
-                &.active,
-                &:hover,
-                &:focus{
-                    a{
-                        color: $main-color-darker !important;
-                        background-color: #fff;
-                        border-bottom: 2px solid $main-color-darker;
-                    }
-                }
-            }
-        }
+        
         
         button {
             border: none !important;
@@ -41,18 +32,39 @@ body {
         }
 
         a {
-            text-decoration: none;
-            font-size: 20px;
-            color: $main-color !important;
-            border-bottom: 2px solid transparent;
-            
-            &:hover,
-            &:active,
-            &:focus{
-                color: $main-color-darker !important;
+            &:not(.logo){
+                text-decoration: none;
+                font-size: 20px;
+                color: $main-color !important;
+                border-bottom: 2px solid transparent;
+                
+                &:hover,
+                &:active,
+                &:focus,
+                &.active{
+                    color: $main-color-darker !important;
+                    background-color: #fff;
+                    border-bottom: 2px solid $main-color-darker;
+                }
+                &.new{
+                    font-size: 18px;
+                    &:hover,
+                    &:active,
+                    &:focus,
+                    &.active{
+                        background-color: transparent !important;
+                        border-bottom: none !important;
+                    }
+                }
             }
-            &.new{
-                font-size: 18px;
+            
+        }
+        &.drop{
+            background-color: rgba($color:$main-color , $alpha: 0.3) !important;
+            a {
+                &:not(.logo){
+                    color: $main-color-darker !important;
+                }
             }
         }
     }  

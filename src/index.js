@@ -6,6 +6,17 @@ import 'jquery/dist/jquery.min';
 import "jquery-validation/dist/jquery.validate.min.js";
 import "popper.js/dist/popper.min.js";
 
+function scrolldown() {
+  if(document.documentElement.scrollTop > 200){
+    $("#navbar-example2").addClass("drop");
+  } else {
+    $("#navbar-example2").removeClass("drop");
+  }
+}
+
+window.onscroll = function() {
+  scrolldown();
+};
 
 $(function(){
     var date = new Date();
@@ -57,4 +68,7 @@ $(function(){
       }
     });
 });
+
+
+
 

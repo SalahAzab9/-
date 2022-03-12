@@ -12,53 +12,31 @@
     .nav-bar {
         &.school-stars-nav {
             .navbar {
-                ul{
-                    li {
-                        &.active,
-                        &:hover,
-                        &:focus{
-                            a{
-                                color: $color-darker !important;
-                                border-bottom: 2px solid $color-darker; 
-                            }
-                        }
-                    }
-                }
 
                 a{
                     color: $color !important;
+                    &:hover,
+                    &:active,
+                    &:focus,
+                    &.active {
+                    color: $color-darker !important;
+                    border-bottom: 2px solid $color-darker;
                 }
-
-                &:hover,
-                &:active,
-                &:focus {
-                color: $color-darker !important;
+ 
             }
             }
         }
         &.school-stars-nav-2 {
             .navbar {
-                ul{
-                    li {
-                        &.active,
-                        &:hover,
-                        &:focus{
-                            a{
-                                color: $color-darker2 !important;
-                                border-bottom: 2px solid $color-darker2; 
-                            }
-                        }
-                    }
-                }
-
                 a{
                     color: $color2 !important;
-                }
-
-                &:hover,
-                &:active,
-                &:focus {
-                color: $color-darker2 !important;
+                    &:hover,
+                    &:active,
+                    &:focus ,
+                    &.active{
+                    color: $color-darker2 !important;
+                    border-bottom: 2px solid $color-darker2;
+                } 
             }
             }
         }

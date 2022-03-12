@@ -1,8 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const { loader } = require("mini-css-extract-plugin");
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+
 
 module.exports= {
     entry: "./src/index.js", 
@@ -26,11 +28,30 @@ module.exports= {
         hot: false, 
       },
 
+      performance: {
+        maxAssetSize: 100000,
+        maxEntrypointSize: 400000,
+        hints: false,
+      },
+
+      optimization: {
+        minimizer: [
+          "...",
+          new ImageMinimizerPlugin({
+            minimizer: {
+              implementation: ImageMinimizerPlugin.squooshMinify,
+          },
+          }),
+        ],
+      },
       module: {
         rules: [
           {
             test: /\.html$/i,
             loader: "html-loader",
+            options: {
+              minimize: true,
+            },
           },
           
           {
@@ -87,11 +108,6 @@ module.exports= {
 
         ],
       },
-      optimization: {
-        minimizer: [
-          new CssMinimizerPlugin(),
-        ],
-      },
 
       plugins: [
         new HtmlWebpackPlugin({
@@ -116,6 +132,7 @@ module.exports= {
         }),
         new MiniCssExtractPlugin({
             filename : "sass/style.css"
-        })
+        }),
+        new OptimizeCssAssetsPlugin({}),
       ]   
 }
