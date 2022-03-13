@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { loader } = require("mini-css-extract-plugin");
 var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports= {
@@ -11,13 +11,13 @@ module.exports= {
 
     output: {
         publicPath :"/",  
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, '/dist'),
         filename: "js/index.js",
     },
 
     devServer: {
         static: {
-          directory: path.join(__dirname, 'dist'),
+          directory: path.join(__dirname, '/dist'),
         },
         compress: true,
         port: 9000,
@@ -32,18 +32,13 @@ module.exports= {
         maxAssetSize: 100000,
         maxEntrypointSize: 400000,
         hints: false,
+        
       },
 
       optimization: {
-        minimizer: [
-          "...",
-          new ImageMinimizerPlugin({
-            minimizer: {
-              implementation: ImageMinimizerPlugin.squooshMinify,
-          },
-          }),
-        ],
+        removeAvailableModules: false,
       },
+
       module: {
         rules: [
           {
@@ -72,6 +67,7 @@ module.exports= {
           
           {
             test: /\.(eot|ttf|woff|woff2)$/,
+            exclude :/images/,
             use: [
               {
                 loader: 'file-loader',
@@ -86,6 +82,7 @@ module.exports= {
 
           {
             test: /\.(png|jpg|gif|json|xml|ico|svg)$/,
+            exclude :/fonts/,
             use: [
               {
                 loader: 'file-loader',
@@ -105,6 +102,19 @@ module.exports= {
               exposes: ["$","jquery","jQuery"],
           }
         },
+
+        {
+      test: /\.m?js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['@babel/preset-env', { targets: "defaults" }]
+          ]
+        }
+      }
+    }
 
         ],
       },
@@ -133,6 +143,7 @@ module.exports= {
         new MiniCssExtractPlugin({
             filename : "sass/style.css"
         }),
-        new OptimizeCssAssetsPlugin({}),
+        new OptimizeCssAssetsPlugin(),
+        new CleanWebpackPlugin(),
       ]   
 }
